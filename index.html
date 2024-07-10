@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDIT COMPUTER AND PHONE ACCESSORIES</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- link for correct path to js -->
+    <script type="text/javascript" src="addToCart.js"></script>
+</head>
+<body>
+    <header>
+        <h1 id="h1">EDIT COMPUTER ACCESSORIES HUB</h1>
+        <img src="https://i.pinimg.com/564x/81/57/8e/81578e2909c28bb578a8351e15dcccbc.jpg" 
+             alt="Your number one online shopping store"
+             style="width:200px;height:200px;">
+    </header>
+    
+    <div class="container">
+        <!-- Item 1 -->
+        <div class="card" id="item1">
+            <img src="https://www.priscom.co.ke/images/products/10-hp-laptop-chargers-18-5v-3-5a-3.jpg">
+            <div class="title">Laptop Charger</div>
+            <button onclick="addToCart('item1')">Add to Cart</button>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="card" id="item2">
+            <img src="https://4.imimg.com/data4/UW/DY/NSDMERP-33600911/laptopscreens-1000x1000.png">
+            <div class="title">Screen</div>
+            <button onclick="addToCart('item2')">Add to Cart</button>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="card" id="item3">
+            <img src="https://m.media-amazon.com/images/I/71sgX4axm2L._AC_SL1500_.jpg">
+            <div class="title">SSD</div>
+            <button onclick="addToCart('item3')">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="cart" id="cart">
+      <div class="title">CART</div>
+      <hr/>
+      <div id="cart-items">
+          <!-- am using an example in cart -->
+          <div class="cart-item" id="cart-item-1">
+              Laptop Charger
+              <button onclick="removeFromCart('cart-item-1')">Remove</button>
+          </div>
+      </div>
+  </div>
+  
+    
+    
+    <script>
+        document.getElementById("h1").style.color = "green";
+        document.getElementById("h1").style.fontFamily = "Verdana";
+        document.getElementById("h1").style.fontSize = "larger";
+    </script>
+</body>
+</html>
